@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="node_modules/remodal/dist/remodal.css">
+  <link rel="stylesheet" href="node_modules/remodal/dist/remodal-default-theme.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>DevOps engineer</title>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav-header">
+    <div class="container">
+      <nav id="navigation" class="navigation"> 
+        <a href="#" class="logo">
+          <img class="logo__img" src="img/logo/logo-4.png" alt="logo">
+        </a> 
+        <div class="lang">
+          <a class="lang__item active">
+           rus
+          </a>  
+          <a href="./eng.html" class="lang__item ">
+            eng
+          </a> 
+
+        </div>
+        <a aria-label="mobile menu" class="nav-toggle"> 
+          <span class="burger"></span> <span class="burger"></span> <span class="burger"></span> 
+        </a>
+        <ul class="menu">
+          <!-- <li class="menu__link"><a href="#" class="menu__a">рус</a></li>
+          <li class="menu__link"><a href="#" class="menu__a">eng</a></li> -->
+          
+          <li class="menu__link"><a href="#development" class="menu__a">DevOps</a></li>
+          <li class="menu__link"><a href="#technology" class="menu__a">Технологии</a></li>
+          <li class="menu__link"><a href="#advantages" class="menu__a">Сотрудничество</a></li>
+          <li class="menu__link"><a href="#medium" class="menu__a">Статьи</a></li>
+          <li class="menu__link"><a href="#footer" class="menu__a">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- JUMBOTRON -->
+  <canvas id="canvas"> </canvas>
+  <section class="jumbotron" id="jumbotron">
+    <div class="header-container">
+      <h1 class="h1">Профессиональный DevOps инженер</h1>
+      <h1 class="h1 h1--strong">Разработка решений для бизнеса</h1>
+      <a href="#development" class="btn-down">
+        <svg class="btn-down__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-arrow-thin-down"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+ 
+  <!-- DEVELOPMENT -->
+  <div class="development py-2" id="development">
+    <div class="container container--row">
+      <h2 class="h2">Что делает DevOps инженер</h2>
+      <div class="two-columns">
+        <ul class="list">
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Деплой и сборка docker контейнеров
+          </li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Внедрение систем автоматической сборки и деплоя приложения</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Решение проблем с процессами</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Настройка систем мониторинга и оповещений</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Интеграция систем контроля версий</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Внедрение использования средств конфигурации</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Построение отказоустойчивых кластерных систем</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Автоматизация развертывания сред тестирования и разработки</li>
+          <li class="list__item">
+            <svg class="list-marker">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+            </svg>
+            Внедрение использования средств конфигурации</li>
+        </ul>
+        <a href="#advantages" class="btn"><span>Сотрудничество</span>  </a>
+      </div>
+      <div class="two-columns">
+        <img class="round-img wow bounceInRight" data-wow-offset="200" src="img/round-img.jpg" alt="computer">
+      </div>
+    </div>
+  </div>
+
+  <!-- TECHNOLOGY -->
+  <section class="technology py-2" id="technology">
+    <div class="container container--column">
+      <h2 class="h2 h2--light">Технологии</h2>
+
+      <!-- modal start -->
+      <div class="brands">
+       
+      <!-- ansible -->
+      <div id="ansible" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Ansible</h3>
+        <p class="modal-text">
+            Ansible — система управления конфигурациями, написанная на Python, с использованием декларативного языка разметки для описания конфигураций. Используется для автоматизации настройки и развертывания программного обеспечения.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#ansible">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-ansible-icon"></use>
+        </svg>
+      </button>
+
+      <!-- docker -->
+      <div id="docker" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Docker</h3>
+        <p class="modal-text">
+            Docker — программное обеспечение для автоматизации развёртывания и управления приложениями в средах с поддержкой контейнеризации. Позволяет «упаковать» приложение со всем его окружением и зависимостями в контейнер, который может быть перенесён на любую Linux-систему с поддержкой cgroups в ядре, а также предоставляет среду по управлению контейнерами.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#docker">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-docker"></use>
+        </svg>
+      </button>
+      
+      
+      
+      <!-- kubernetes -->
+      <div id="kubernetes" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Kubernetes</h3>
+        <p class="modal-text">
+          Kubernetes (K8s) - это система с открытым исходным кодом для автоматизации развертывания, масштабирования и управления контейнерными приложениями. Он группирует контейнеры, которые составляют приложение, в логические единицы для удобного управления и обнаружения. 
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#kubernetes">
+        <svg class="brands__svg">
+            <use xlink:href="img/svg/symbol-defs.svg#icon-kubernetes"></use>
+        </svg>
+      </button>
+      
+      <!-- debian -->
+      <div id="debian" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Debian</h3>
+        <p class="modal-text">
+          Debian - операционная система, состоящая из свободного ПО с открытым исходным кодом. В настоящее время Debian GNU/Linux — один из самых популярных и важных дистрибутивов GNU/Linux, в первичной форме оказавший значительное влияние на развитие этого типа ОС в целом. 
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#debian">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-debian"></use>
+        </svg>
+      </button>
+      
+      <!-- ubuntu -->
+      <div id="ubuntu" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Ubuntu</h3>
+        <p class="modal-text">
+            Ubuntu -  операционная система, основанная на Debian GNU/Linux. Основным разработчиком и спонсором является компания Canonical. В настоящее время проект активно развивается и поддерживается свободным сообществом.   
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#ubuntu">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-ubuntu"></use>
+        </svg>
+      </button>
+      
+      <!-- amazonaws -->
+      <div id="amazonaws" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Amazon Web Services</h3>
+        <p class="modal-text">
+            Amazon Web Services (AWS) — коммерческое публичное облако, поддерживаемое и развиваемое компанией Amazon с 2006 года. Предоставляет подписчикам услуги как по инфраструктурной модели (виртуальные серверы, ресурсы хранения), так и платформенного уровня (облачные базы данных, облачное связующее программное обеспечение, облачные бессерверные вычисления, средства разработки). 
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#amazonaws">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-amazonaws"></use>
+        </svg>
+      </button>
+      
+      <!-- azure -->
+      <div id="azure" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Azure</h3>
+        <p class="modal-text">
+            Microsoft Azure — это набор облачных служб, который помогает вашей организации решать бизнес-задачи. Это свобода создания, развертывания приложений и управления ими в обширной глобальной сети с использованием ваших любимых инструментов и платформ.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#azure">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-azure"></use>
+        </svg>
+      </button>
+      
+      <!-- digitalocean -->
+      <div id="digitalocean" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Digitalocean</h3>
+        <p class="modal-text">
+            Digitalocean - упрощает запуск в облаке и увеличивает масштаб по мере роста - независимо от того, используете ли вы одну виртуальную машину или десять тысяч.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#digitalocean">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-digitalocean"></use>
+        </svg>
+      </button>
+      
+      <!-- prometheus -->
+      <div id="prometheus" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Prometheus</h3>
+        <p class="modal-text">
+            Prometheus - это набор инструментов для мониторинга и оповещения систем с открытым исходным кодом. Prometheus собирает метрики от отслеживаемых целей, собирая конечные точки метрик HTTP для этих целей.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#prometheus">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-Prometheus_software_logo"></use>
+        </svg>
+      </button>
+      
+      <!-- grafana -->
+      <div id="grafana" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Grafana</h3>
+        <p class="modal-text">
+          Grafana позволяет запрашивать, визуализировать, оповещать и понимать ваши метрики независимо от того, где они хранятся. Создавайте, исследуйте и делитесь инструментальными панелями с вашей командой и развивайте культуру управления данными.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#grafana">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-grafana"></use>
+        </svg>
+      </button>
+      
+      <!-- git -->
+      <div id="git" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Git</h3>
+        <p class="modal-text">
+          Git - это бесплатная распределенная система контроля версий с открытым исходным кодом, предназначенная для быстрой и эффективной работы с небольшими и очень крупными проектами.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#git">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-git"></use>
+        </svg>
+      </button>
+      
+      <!-- jenkins -->
+      <div id="jenkins" class="display-none example js-leanmodal-modal">
+        <h3 class="h3 h3--strong">Jenkins</h3>
+        <p class="modal-text">
+          Jenkins - это автономный сервер автоматизации с открытым исходным кодом, который можно использовать для автоматизации всех видов задач, связанных со сборкой, тестированием, поставкой или развертыванием программного обеспечения.
+        </p>
+        <a class="js-leanmodal-close">Close</a>
+      </div>
+
+      <button class="leanmodal-trigger modal-btn" data-modal-id="#jenkins">
+        <svg class="brands__svg">
+          <use xlink:href="img/svg/symbol-defs.svg#icon-jenkins"></use>
+        </svg>
+      </button>
+
+
+
+      <!-- modal end -->
+
+    </div>
+    
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages py-2" id="advantages">
+    <div class="container container--column">
+      <h2 class="h2">Преимущества от сотрудничества</h2>
+      <div class="card-container">
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-pig"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Стоимость</h4>
+          <p class="card__text">
+            Оптимизация расходов на владение ИТ инфраструктурой
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-chronometer"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Производительность</h4>
+          <p class="card__text">
+            Скорость разработки, деплоя и работы проекта увеличится
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-safe"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Безопасность</h4>
+          <p class="card__text">
+            Обеспечение отказоустойчивости и защиты данных
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-cogs"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Автоматизация</h4>
+          <p class="card__text">
+            Установка и настройка продуктов для тестирования, автоматизации сборки и деплоя
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-ruler"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Статистика</h4>
+          <p class="card__text">
+            Полный круглосуточный мониторинг систем и проектов
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <svg class="card-svg">
+              <use xlink:href="img/svg/symbol-defs.svg#icon-stats"></use>
+            </svg>
+          </div>
+          <h4 class="card__header">Оптимизация</h4>
+          <p class="card__text">
+            Улучшение бизнес процессов за счет оптимального использования ИТ ресурсов
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIUM -->
+  <section class="medium py-2" id="medium">
+    <h2 class="none">Medium</h2>
+    <div class="container container--row">
+      <div class="two-columns">
+        <ul class="subscribe">
+          <li class="subscribe__1 wow bounceInLeft" data-wow-offset="200" >Подпишись</li>
+          <li class="subscribe__2 wow bounceInLeft" data-wow-offset="200" data-wow-delay="1s">на мою страницу</li>
+          <li class="subscribe__3 wow bounceInLeft" data-wow-offset="200" data-wow-delay="2s">
+            <a href="https://medium.com/@_oleksii_"  target="_blank">Медиум</a>
+          </li>
+        </ul>
+      </div>
+      <div class="two-columns">
+        <ul class="list">
+          <li class="list__item">
+            <a class="medium-link" target="_blank" href="https://medium.com/pharos-production/monitor-your-azure-services-in-grafana-d664049991ce">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              Monitor Your Azure Services in Grafana
+            </a>
+          </li>
+          
+          <li class="list__item">
+            <a  class="medium-link" target="_blank" href="https://medium.com/pharos-production/how-to-deploy-apache-pulsar-cluster-in-kubernetes-808ecdfd87">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              How to Deploy Apache Pulsar Cluster in Kubernetes
+            </a>
+          </li>
+          
+          <li class="list__item">
+            <a class="medium-link" target="_blank" href="https://medium.com/pharos-production/how-to-deploy-flink-cluster-flink-exporter-in-kubernetes-cluster-48e24b440446">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              How to Deploy Flink Cluster & Flink-exporter in Kubernetes Cluster
+            </a>
+          </li>
+          
+          <li class="list__item">
+            <a class="medium-link" target="_blank" href="https://medium.com/pharos-production/collect-and-view-logs-with-grafana-loki-33d9155ac581">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              Collect and View Logs with Grafana Loki
+            </a>
+          </li>
+          
+          <li class="list__item">
+            <a class="medium-link" target="_blank" href="https://medium.com/pharos-production/how-to-install-tune-mongodb-using-ansible-693a40495ca1">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              How to Install & Tune MongoDB Using Ansible
+            </a>
+          </li>
+          
+          <li class="list__item last-item">
+            <a class="medium-link" target="_blank" href="https://medium.com/pharos-production/managing-linux-users-using-ansible-a8a03db8fcc6">
+              <svg class="list-marker">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-play3"></use>
+              </svg>
+              Managing Linux Users using Ansible
+            </a>
+          </li>
+          
+        </ul>
+        <a href="https://medium.com/@_oleksii_" target="_blank" class="btn"><span>Все статьи</span>  </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer py-2" id="footer">
+      <div class="container container--row">
+        <h2 class="h2 h2--strong">Let's work together!</h2>
+        <div class="contact-container">
+          <!-- <div class="contact">
+              <svg class="contact__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <span class="contact__text">+38&nbsp;(096)&nbsp;893-56-55</span>
+          </div> -->
+          <div class="contact">
+              <svg class="contact__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+              <span class="contact__text">@alexsplash</span>
+          </div>
+          <div class="contact">
+              <svg class="contact__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              <span class="contact__text">oleksiiyanushkevych@gmail.com</span>
+          </div>
+          <div class="sotial-container">
+            <!-- <a href="tg://resolve?domain=+380968935655"class="sotial">
+              <svg class="sotial__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </a> -->
+            <a href="https://www.facebook.com/oleksii.yanushkevych"  target="_blank" class="sotial">
+              <svg class="sotial__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-facebook2"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/oleksii-yanushkevych/"  target="_blank" class="sotial">
+              <svg class="sotial__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="https://medium.com/@_oleksii_"  target="_blank" class="sotial">
+              <svg class="sotial__svg">
+                <use xlink:href="img/svg/symbol-defs.svg#icon-medium1"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+  </footer>
+
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery-easing/jquery.easing.1.3.js"></script>
+  <!-- <script src="node_modules/remodal/dist/remodal.min.js"></script> -->
+
+  <script src="js/wow.min.js"></script>
+  <script src="js/wow-init.js"></script>
+
+  <script src="js/jQuery.leanModal2.min.js"></script>
+  <script src="js/modal.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/dots.js"></script>
+  <script src="js/navigation.js"></script>
+
+</body>
+</html>
+
+
